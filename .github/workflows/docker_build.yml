@@ -28,5 +28,4 @@ jobs:
           --tag jeromebehe/jenkins-rpi:latest \
           --tag jeromebehe/jenkins-rpi:$RELEASE_VERSION \
           --platform linux/arm . 
-  
-  
+   
