@@ -12,6 +12,7 @@ RUN apt-get install -y --no-install-recommends curl openjdk-8-jdk
 RUN apt-get install -y git
 RUN apt-get install -y make
 RUN apt-get install -y gcc
+RUN apt-get install -y python3.8
 RUN rm -rf /var/lib/apt/lists/*
 
 RUN curl -fL -o /opt/jenkins.war https://repo.jenkins-ci.org/public/org/jenkins-ci/main/jenkins-war/{$JENKINS_VERSION}/jenkins-war-{$JENKINS_VERSION}.war
