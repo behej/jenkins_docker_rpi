@@ -4,7 +4,7 @@ This image runs Jenkins but also development tools such as:
 * gcc
 * make
 * git
-* python
+* python, pip and other packages
 
 Do not forget to mount volume for permanent storage of date (plugins, jobs configuration, etc.)
 
@@ -15,9 +15,10 @@ docker run --rm --name jenkins -p 8080:8080 -p 50000:50000 -v path/to/volume:/va
 
 
 
-
-## Versions
-* 1.0 : Jenkins version 2.277.4
+## Changelog
+* 1.3 : Add pip and nosetests
+* 1.2 : Add python3.8
 * 1.1 : Add Git, make and gcc
-* 1.2 : Add python 3.8
+* 1.0 : Jenkins version 2.277.4
+
 
