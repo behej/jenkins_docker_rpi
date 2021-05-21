@@ -13,7 +13,7 @@ RUN apt-get install -y git
 RUN apt-get install -y make
 RUN apt-get install -y gcc
 RUN apt-get install -y python3.8
-RUN apt-get install -y python3.8-pip
+RUN apt-get install -y python3-pip
 RUN pip install nose
 RUN rm -rf /var/lib/apt/lists/*
 
