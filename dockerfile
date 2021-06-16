@@ -15,6 +15,7 @@ RUN apt-get install -y gcc
 RUN apt-get install -y python3.8
 RUN apt-get install -y python3-pip
 RUN pip install nose
+RUN apt-get install -y doxygen
 RUN rm -rf /var/lib/apt/lists/*
 
 RUN curl -fL -o /opt/jenkins.war https://repo.jenkins-ci.org/public/org/jenkins-ci/main/jenkins-war/{$JENKINS_VERSION}/jenkins-war-{$JENKINS_VERSION}.war
