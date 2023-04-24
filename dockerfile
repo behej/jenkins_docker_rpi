@@ -8,7 +8,7 @@ ENV JENKINS_HOME /var/jenkins_home
 ENV JENKINS_SLAVE_AGENT_PORT 50000
 
 RUN apt-get update
-RUN apt-get install -y --no-install-recommends curl openjdk-8-jdk
+RUN apt-get install -y --no-install-recommends curl openjdk-11-jdk
 RUN apt-get install -y git
 # RUN apt-get install -y make
 # RUN apt-get install -y gcc
